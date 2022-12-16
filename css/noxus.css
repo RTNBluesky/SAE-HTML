@@ -1,0 +1,11 @@
+h1.titre {
+  /*titre de niveau 1*/
+  color: #650000;
+  /*couleur marron*/
+}
+
+h2.histoire {
+  /*titre de niveau 2*/
+  color: #FF0000;
+  /*couleur rouge*/
+}

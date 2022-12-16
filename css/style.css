@@ -1,0 +1,211 @@
+body {
+  /*corp*/
+  background-color: white;
+  /*couleur de fond*/
+  color: rgb(0, 0, 0);
+  /*couleur*/
+  font-family: "Helvetica";
+  /*famille de police*/
+}
+
+nav {
+  /*menu*/
+  text-align: center;
+  /*alignement du texte au centre des caases dans le menu*/
+  font-size: 1.2em;
+  /*taille du texte*/
+}
+
+.menu ul {
+  /*decoration*/
+  list-style-type: none;
+  /*commande pour enlever les decoration*/
+}
+
+.menu {
+  /*menu deroulen*/
+  display: inline-block;
+  /*initialisation menu en bloc*/
+  list-style-type: none;
+  /*commande pour enlever les decoration*/
+  float: left;
+  /*commande pour ancrer le menu a gauche*/
+  color: white;
+  /*couleur*/
+  width: 140px;
+  /*longueur de l'image*/
+  height: 40px;
+  /*hauteur*/
+  line-height: 40px;
+  /*placement du texte par rapport au menu*/
+  background: rgba(0, 0, 0, 0.7);
+  /*couleur de fond*/
+  cursor: pointer;
+  /*commande pour changer de couleur le fond quand on passe la souris dessus*/
+  font-size: 1em;
+  /*taille du texte*/
+  position: fixed;
+  /*menu reste quand on scroll*/
+  top: 0px;
+  /*position a la vertical du menu*/
+  left: 0px;
+  /*position du menu a l'horizontal*/
+}
+
+.sub-menu {
+  /*menu deroulen*/
+  transform: scale(0);
+  /*deroulement du menu*/
+  transform-origin: top center;
+  /*position du deroulement du menu*/
+  transition: all 300ms ease-in-out;
+  /*temp de transition du deroulement du menu*/
+}
+
+.sub-menu li {
+  /*menu deroulen*/
+  font-size: 1em;
+  /*taille du texte*/
+  background: rgba(0, 0, 0, 0.8);
+  /*couleur du fond derriere le texte*/
+  color: white;
+  /*couleur du texte*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /*bordure entre chaque case du menu*/
+  transform: scale(0);
+  /*deroulement du menu*/
+  transform-origin: top center;
+  /*position du deroulement du menu*/
+  transition: all 3ms ease-in-out;
+  /*temp de transition du deroulement du menu*/
+}
+
+.sub-menu li:last-child {
+  /*bordure de fin du menu deroulen*/
+  border-bottom: 0;
+  /*commande pour enlever la bordure decoration*/
+}
+
+.sub-menu li:hover {
+  /*font du menu deroulen*/
+  background: black;
+  /*couleur du menu deroulen*/
+}
+
+.menu>li:hover .sub-menu li {
+  /*menu derooulen*/
+  transform: scale(1);
+  /*deroulement du menu*/
+}
+
+.menu>li:hover .sub-menu {
+  /*menu derooulen*/
+  transform: scale(1);
+  /*deroulement du menu*/
+}
+
+a.deco {
+  /*decoration lien hypertexte*/
+  text-decoration: none;
+  /*commande pour enlever les decorations du texte*/
+  color: white;
+  /*couleur du texte*/
+  font-size: 1em;
+  /*taille du texte*/
+}
+
+h1.titre {
+  /*titre de la page*/
+  font-size: 8em;
+  /*taille du texte*/
+  color: white;
+  /*couleur du texte*/
+  text-align: center;
+  /*commande pour centrer le texte*/
+  width: 100%;
+  /*centre du texte par rapport a la largeur maximal de la page sur l'appareil*/
+}
+
+img.adaptation {
+  /*adaptation de l'image*/
+  width: 100%;
+  /*adaptation de la largeur de l'image par rapport a la taille de l'ecran*/
+  height: calc(width*0.5625);
+  /*adaptation de la hauteur de l'image par rapport a la taille de l'ecran*/
+  text-align: center;
+  /*commande pour centrer l'image*/
+  margin: auto;
+  /*margin automatique*/
+  display: flex;
+  /*commande pour centrer l'image par rapport au bordure*/
+}
+
+h2.histoire {
+  /*titre partie de la page*/
+  font-size: 6em;
+  /*taille du texte*/
+  color: white;
+  /*couleur du texte*/
+  text-align: center;
+  /*commande pour centrer le texte*/
+}
+
+p.recits {
+  /*paragraphe*/
+  padding: 100px 100px;
+  /*augentation superficie du texte*/
+  font-size: 2em;
+  /*taille du texte*/
+  text-align: center;
+  /*commande pour centrer le texte*/
+}
+
+#scroll_to_top {
+  /*bouton pour remonter en haut de la page*/
+  position: fixed;
+  /*buton reste quand on scroll*/
+  width: 150px;
+  /*largeur image buton*/
+  height: 150px;
+  /*hauteur image buton*/
+  bottom: 50px;
+  /*position vertical buton*/
+  right: 30px;
+  /*position horizontal buton*/
+}
+
+#scroll_to_top img {
+  /*centre buton*/
+  width: 150px;
+  /*position centre buton*/
+}
+
+.mode {
+  /*buton mode sombre*/
+  float: right;
+  /*ancrage buton a droite de l'image*/
+  cursor: pointer;
+  /*changement de couleur quand on passe le curseur*/
+  border: 1px solid #555;
+  /*affichage de la bordure du buton et couleur*/
+  text-align: center;
+  /*commande pour centrer le texte dans le buton*/
+  padding: 10px;
+  /*augmentation durface du buton*/
+  margin-left: 40px;
+  /*marge bordure gauche par rapport au centre du buton*/
+  position: fixed;
+  /*buton reste quand on scroll*/
+  top: 5px;
+  /*position vertical buton*/
+  right: 5px;
+  /*position horizontal buton*/
+}
+
+.dark {
+  /*mode sombre*/
+  background-color: rgb(0, 0, 0);
+  /*couleur du fond*/
+  color: rgb(255, 255, 255);
+  /*couleur du texte*/
+}

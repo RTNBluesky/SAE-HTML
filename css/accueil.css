@@ -1,0 +1,63 @@
+h1.titre {
+  /*titre de niveau 1*/
+  color: rgb(135, 95, 24);
+  /*change la couleur*/
+}
+
+h2.carte {
+  /*titre de niveau 2*/
+  font-size: 6em;
+  /*taille de la police*/
+  font-family: "Helvetica";
+  /*famille de police*/
+  color: rgb(176, 124, 51);
+  /*change la couleur*/
+  text-align: center;
+  /*aligne le texte au centre*/
+}
+
+h3.avis {
+  /*titre de niveau 3*/
+  font-size: 2em;
+  /*taille de la police*/
+  font-family: "Helvetica";
+  /*famille de police*/
+  text-align: center;
+  /*aligne le texte au centre*/
+}
+
+p.centre {
+  /*paragrahe de texte*/
+  font-family: "Helvetica";
+  /*famille de police*/
+  text-align: center;
+  /*aligne le texte au centre*/
+}
+
+label.avi {
+  /*Rajoute une légende */
+  padding: 27px;
+  /*rempli la marge*/
+  font-family: "Helvetica";
+  /*famille de police*/
+  font-size: 2em;
+  /*taille de la police*/
+}
+
+h3.source {
+  /*titre de niveau 3*/
+  font-size: 2em;
+  /*taille de la police*/
+  font-family: "Helvetica";
+  /*famille de police*/
+  text-align: center;
+  /*aligne le texte au centre*/
+}
+
+img.centre {
+  /*image*/
+  text-align: center;
+  /*aligne l'image au centre*/
+  margin: auto;
+  display: flex;
+}
